@@ -10,13 +10,19 @@
 /*navigation bar section*/
 nav {
     width:76%;
-    padding:1%;   
+    padding:1% 1% 0% 1%;   
 }
 /*sets the navigation bar and spaces the text*/
 .topNav {
     width: max-content;
     margin-left: auto;
     word-spacing: 30px;
+
+}
+/*underlines top nav when highlighted*/
+.underline:hover {
+    padding-bottom: 10px;
+    border-bottom: 3px solid #ffffff;
 }
 /*creates a sandwich for when on mobile*/
 .sandwich {
@@ -188,6 +194,13 @@ h3 {
     padding: 5px;
     margin-top: 10px;
     height: 40px;
+    transition-duration: .5s;
+}
+
+/*makes the buttons interact(chages color when hovering)*/
+.ebutton:hover{
+    background-color: white;
+    color: black;
 }
 /*See more work button*/
 .sbutton {
@@ -199,6 +212,12 @@ h3 {
     width:30%;
     margin-bottom: 20px;
     text-align: center;
+    transition-duration: .5s;
+}
+
+.sbutton:hover {
+    background-color: white;
+    color: black;
 }
 /*aligns "See more Work button at the bottom of page*/
 .alignThis {
