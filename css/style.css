@@ -32,6 +32,17 @@ nav {
 .blackBackground {
     background-color: black;
 }
+/*modifies the hero image button*/
+.heroBtn {
+    color:black;
+    background-color:white;
+    border-style: none;
+    width: fit-content;
+    border-radius: 10px;
+    font-size: 24px;
+    text-align: center;
+    padding: 1%;
+}
 
 /*aligns hero image items*/
 .content {
@@ -50,14 +61,15 @@ nav {
     font-size : 64px;
 }
 
-/*modifies the size of the text to picture ratio on the hero*/
+/*modifies the size of the text to picture ratio on the hero, also sets button to center*/
 .heroSize {
     width: 60%;
+    text-align: center;
 }
 /*hero image body text*/
 .heroText {
     width: 50%;
-    margin: 6% 10% 10% 30%;
+    margin: 6% 10% 5% 30%;
     text-align: center;
     font-size: 28px;
 }
