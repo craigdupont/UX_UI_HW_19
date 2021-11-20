@@ -23,6 +23,7 @@ nav {
 .underline:hover {
     padding-bottom: 10px;
     border-bottom: 3px solid #ffffff;
+    transition-duration: .5s;
 }
 /*creates a sandwich for when on mobile*/
 .sandwich {
@@ -40,14 +41,18 @@ nav {
 }
 /*modifies the hero image button*/
 .heroBtn {
-    color:black;
-    background-color:white;
+    color:white;
+    background-color:black;
     border-style: none;
     width: fit-content;
     border-radius: 10px;
     font-size: 24px;
     text-align: center;
     padding: 1%;
+}
+/*spaces the down arrow from the "Check Out My Work" in the button*/
+.downArrow {
+    margin: 0px 0px 2px 10px;
 }
 
 /*aligns hero image items*/
@@ -92,10 +97,13 @@ body {
 /*makes the skills section into a grid*/
 .gridLayout {
     display: grid;
-    grid-template-columns: 400px 400px;
-    grid-row-gap: 20px;
+    grid-template-columns: 500px 500px;
+    grid-row-gap: 60px;
     grid-column-gap: 20px;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+
 }
 /*lets the skill and tools titles take up the whole space*/
 .fullLength {
@@ -111,8 +119,10 @@ margin-top: 20px;
 }
 /*aligns the title and body under skills*/
 .skillsText {
-    margin-top: 3%;
-    height: fit-content;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 /*font size for skills subsection titles*/
 h4 {
@@ -121,11 +131,14 @@ h4 {
 /*text size for skills body*/
 .skillsBody {
     font-size: 24px;
+    text-align: justify;
+    margin: 0px;
 }
 /*bordering for skill pictures*/
 .skillPic {
     border: 1px solid black;
     border-radius: 5px;
+
 }
 
 
@@ -253,6 +266,14 @@ footer {
 }
 .fontG {
     font-family: 'Gudea', sans-serif;
+}
+
+.item1 {
+    text-align: right;
+}
+
+.item5 {
+    text-align: right;
 }
 
 /*Mobile Media Query*/
